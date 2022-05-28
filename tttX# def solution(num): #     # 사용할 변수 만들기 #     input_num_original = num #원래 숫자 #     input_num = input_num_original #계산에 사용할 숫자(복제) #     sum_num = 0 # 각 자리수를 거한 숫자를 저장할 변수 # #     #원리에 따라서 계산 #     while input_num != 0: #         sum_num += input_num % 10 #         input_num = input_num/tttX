@@ -1,0 +1,35 @@
+# def solution(num):
+#     # 사용할 변수 만들기
+#     input_num_original = num #원래 숫자
+#     input_num = input_num_original #계산에 사용할 숫자(복제)
+#     sum_num = 0 # 각 자리수를 거한 숫자를 저장할 변수
+#
+#     #원리에 따라서 계산
+#     while input_num != 0:
+#         sum_num += input_num % 10
+#         input_num = input_num // 10
+#
+#     if input_num_original % sum_num == 0:
+#         return True
+#     else:
+#         return False
+#
+# print(solution(int(input()))) #함수 실행(호출)
+# --------------------------------------------
+#다르게
+# def solution(x):
+#     num = 0
+#     for i in str(x):
+#         num += int(i)
+#     return x % num == 0
+# ---------------------------(다른 문제)
+# def soltion(s,n):
+#     answer = ""
+#     for i in s:
+#         if i.isuooer():
+#             answer +=(chr((ord(i)-ord('A') + n) % 26 + ord('A')))
+#         elif i.islower():
+#             answer +=chr((ord(i)-ord('a') + n) % 26 + ord('a'))
+#         elif i == ' ':
+#             answer += i
+#     return answer 
